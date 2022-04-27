@@ -424,6 +424,7 @@ bool Box::setProperty(Pid propertyId, const PropertyValue& v)
         return MeasureBase::setProperty(propertyId, v);
     }
     triggerLayout();
+    setAutoSizeEnabled(false);
     return true;
 }
 
